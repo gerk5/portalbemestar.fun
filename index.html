@@ -53,7 +53,20 @@
                     <p style="font-size:22px;" class="sub-header text-block-narrow">Erro 404 Not Found.</p>
                 </div>
         </div>
-
+<script>
+if (document.addEventListener) {
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+        return false;
+    });
+} else { //Versões antigas do IE
+    document.attachEvent("oncontextmenu", function(e) {
+        e = e || window.event;
+        e.returnValue = false;
+        return false;
+    });
+}
+</script>
 
 
 </div></body></html>
